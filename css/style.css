@@ -3,15 +3,23 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root {
+    --main-color: #631A86;
+    --main-color-light: #C45AB3;
+    --secondary-color: #F45866;
+    --secondary-color-light: #F49390;
+}
+
 /* CSS FÖR ELEMENTTAGGAR */
 body {
     margin: 0;
+    background-color: wheat;
 }
 
 footer {
     width: 100vw;
     height: 300px;
-    background: red;
+    background: var(--secondary-color);
 }
 
 h3 {
@@ -22,19 +30,21 @@ h3 {
 /* NAV */
 #nav {
     width: 100vw;
-    background:  rgb(70, 69, 64);
+    background: var(--secondary-color);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 40px;
+    justify-content: center;
+    height: 45px;
     overflow-y: hidden;
 }
 #nav > ul {
     width: 60%;
+    max-width: 500px;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 #nav > ul > li {
     float: left;
@@ -43,15 +53,20 @@ h3 {
 }
 #nav > ul > li > a {
     text-decoration: none;
-    color: black;
+    color: white;
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px 10px;
-    background: white;
-    border-radius: 3px;
+    padding: 7px 12px;
+    background: var(--secondary-color-light);
+    border-radius: 20px;
+}
+#nav > ul > li > a:hover {
+    background-color: #ec8884;
+    transition: ease 100ms;
+    transform: scale(1.02);
 }
 
 /* UTILITIES */
@@ -59,7 +74,7 @@ h3 {
     margin: 10px auto;
 }
 .shadow {
-    box-shadow: 5px 5px 0px 0px rgb(77, 37, 37);
+    box-shadow: 7px 7px 0px 0px  var(--secondary-color);
 }
 
 /* CSS FÖR INDEX.HTML */
@@ -105,14 +120,15 @@ h3 {
     width: 80vw;
     max-width: 800px;
     margin: 0 auto;
-    background: rgb(112, 112, 100);
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .menu_item {
     background: rgb(249, 252, 249);
-    margin: 10px 10px;
+    margin: 15px 15px;
     display: flex;
     flex-direction: row;
     border-radius: 4px;
@@ -121,6 +137,7 @@ h3 {
 .menu_item > img {
     width: 50%;
     max-width: 300px;
+    height: auto;
     object-fit: cover;
     border-radius: inherit;
     border-top-right-radius: 0px;
@@ -131,4 +148,10 @@ h3 {
     padding: 10px;
     background: white;
     width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    #menu {
+        width: 100%;
+    }
 }
