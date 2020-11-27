@@ -4,27 +4,31 @@
 }
 
 :root {
-    --main-color: #631A86;
-    --main-color-light: #C45AB3;
     --secondary-color: #F45866;
     --secondary-color-light: #F49390;
+    --main-color: #D6EFFF;
+    --main-color-light: #FEFEFF;
 }
 
 /* CSS FÖR ELEMENTTAGGAR */
 body {
     margin: 0;
-    background-color: wheat;
-}
-
-footer {
-    width: 100vw;
-    height: 300px;
-    background: var(--secondary-color);
+    background-color: var(--main-color-light);
 }
 
 h3 {
     font-size: 1.5em;
     margin: 0 5px;
+}
+a {
+    text-decoration: none;
+    font-style: none;
+    color: inherit;
+    display: inline-block;
+}
+a:hover {
+    color: black;
+    background-color: white;
 }
 
 /* NAV */
@@ -120,7 +124,7 @@ h3 {
     width: 80vw;
     max-width: 800px;
     margin: 0 auto;
-    background: whitesmoke;
+    background: var(--main-color);
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
@@ -154,4 +158,30 @@ h3 {
     #menu {
         width: 100%;
     }
+}
+
+/* CSS FÖR FOOTER */
+footer {
+    width: 100vw;
+    height: 250px;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#social_media_section {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    color: white;
+    width: 50%;
+    background-color: rgb(49, 28, 28);
+}
+#social_media_section > h3 {
+    font-size: 1.4rem;
+    color: var(--main-color-light);
+}
+#social_media_section > a {
+
 }
