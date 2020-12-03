@@ -87,6 +87,10 @@ a:hover {
 .shadow {
     box-shadow: 7px 7px 0px 0px  var(--secondary-color);
 }
+.column {
+    display: flex;
+    flex-direction: column;
+}
 
 /* CSS FÖR INDEX.HTML */
 #start_main {
@@ -163,6 +167,27 @@ a:hover {
     #menu {
         width: 100%;
     }
+}
+
+/* CSS FÖR ABOUT.HTML */
+#grid_wrapper {
+    display: grid;
+    width: 80vw;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "h v";
+}
+#grid_wrapper > * {
+    padding: 10px 10px;
+    min-height: 50vh;
+}
+#grid_wrapper:nth-last-child(0) {
+    grid: h
+}
+#grid_wrapper:nth-last-child(1) {
+    grid: v
 }
 
 /* CSS FÖR FOOTER */
