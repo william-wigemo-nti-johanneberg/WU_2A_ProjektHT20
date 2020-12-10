@@ -45,6 +45,7 @@ img {
 
 /* NAV */
 #nav {
+    grid-area: head;
     width: 100vw;
     background: var(--secondary-color);
     display: flex;
@@ -102,6 +103,16 @@ img {
     height: 100%;
     max-height: 200px;
 }
+/* Layout grid */
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "head"
+    "main"
+    "foot";
+}
 
 /* UTILITIES */
 .center {
@@ -158,6 +169,9 @@ img {
 
 
 /* CSS FÖR MENU.HTML */
+#menu_main {
+    grid-area: main;
+}
 #menu {
     width: 80vw;
     max-width: 1000px;
@@ -209,7 +223,8 @@ img {
 }
 
 /* CSS FÖR ABOUT.HTML */
-#grid_wrapper_about {
+#grid_wrapper_about_main {
+    grid-area: main;
     padding: 50px 0px;
     display: grid;
     width: 80vw;
@@ -220,19 +235,19 @@ img {
     "h v";
     grid-column-gap: 80px;
 }
-#grid_wrapper_about > * {
+#grid_wrapper_about_main > * {
     padding: 20px 0px;
     min-height: 50vh;
 }
-#grid_wrapper_about:nth-last-child(0) {
-    grid: h;
+#grid_wrapper_about_main:nth-last-child(0) {
+    grid-area: h;
 }
-#grid_wrapper_about:nth-last-child(1) {
-    grid: v;
+#grid_wrapper_about_main:nth-last-child(1) {
+    grid-area: v;
 }
 
 @media only screen and (max-width: 600px){
-    #grid_wrapper_about {
+    #grid_wrapper_about_main {
         grid-template:
         "h" auto
         "v" auto
@@ -243,6 +258,7 @@ img {
 /* CSS FÖR FOOTER */
 footer {
     width: 100vw;
+    grid-area: foot;
     height: 250px;
     background: var(--secondary-color);
     padding: 30px;
