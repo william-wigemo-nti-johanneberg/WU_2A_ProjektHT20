@@ -1,6 +1,6 @@
 
 
-document.addEventListener('scroll', function(e){
+document.addEventListener('scroll', function(){
     const scroll_pos_y = window.pageYOffset
     const nav = document.getElementById("nav")
     if (scroll_pos_y >= 100){
@@ -9,4 +9,14 @@ document.addEventListener('scroll', function(e){
     } else {
         nav.setAttribute("class", "")
     }
+})
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    const nav = document.getElementById("nav");
+    nav.addEventListener('click', function(){
+        if (nav.classList.contains("small_nav")){
+            window.scrollTo(0, 0)
+        }
+    })
 })
