@@ -19,6 +19,7 @@ html {
 body {
     margin: 0;
     background-color: var(--main-color-light);
+    overflow-x: hidden;
 }
 h1 {
     font-size: 3rem;
@@ -191,6 +192,29 @@ img {
     flex-direction: row;
     border-radius: 4px;
     border: solid rgb(255, 255, 255) 3px;
+    overflow: hidden;
+}
+.menu_item:nth-child(odd){
+    animation: ease-out 0.5s slide_in_odd;
+}
+.menu_item:nth-child(even){
+    animation: ease-out 0.5s slide_in_even;
+}
+@keyframes slide_in_even {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes slide_in_odd {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0%);
+    }
 }
 .menu_item > img {
     width: 50%;
