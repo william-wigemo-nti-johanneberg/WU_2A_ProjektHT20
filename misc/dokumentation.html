@@ -110,12 +110,12 @@
         <tr>           
             <td>51</td>
             <td>
-            <!-- Vad görs på lektionen vecka 50? -->
+            <!-- Vad görs på lektionen vecka 51? -->
             * JS funktioner för skojs skull
             * Testa med valideringsverktyg
             </td>
             <td>
-            <!-- Vad görs utanför lektionen vecka 50? -->
+            <!-- Vad görs utanför lektionen vecka 51? -->
             * Ny logga som är anpassad för att vara i mindre format
             </td>
         </tr>
@@ -152,6 +152,30 @@
     Lektion 1: Jag har finslipat sidan lite grann. Bland annat har jag fixat alt-attribut på bilderna, flyttat psd-filerna till misc och uppdaterat dokumentationen så att jag har en planering för v.51.
 
     Lektion 2: Jag har fixat till en om oss ruta i footern på menysidan därför att det var så det var tänkt från början. Dessutom har jag lagt till en rät linje mellan de två kolumnerna på aboutsidan, samt jobbat med en animation när man går ni på menysidan så att rätterna slidar in från sidorna. Jag märkte att nth-child kollar vilket index barnet och ändrade så att det blev rätt.
+    <h3>Lektioner vecka 50</h3>
+    <!-- Fyll på med dokumentation här. -->
+
+    Lektion 1: Testresultat:
+
+    HTML-check:
+    about.html - inga error
+    index.html - Varning som säger att sen section inte har en titel. Jag behåller det så jag har eftersom jag vill att titeln jag redan har ska vara utanför det rosa/röda området.
+    menu.html - samma varning som i index.html Jag kommer återigen behålla det så jag har det trots varningen eftersom den sectionen som inte har en titel är en grid wrapper och jag skulle inte vilja att titeln är en del av griden.
+
+    CSS-check:
+    style.css - Fick varningar på mina variabler. Jag antar att det är något jag bara kan ignorera eftersom det står "Egenskap -- är inte en känd leverantörsutvidgning."
+
+    Hade gett värdet 'none' till 'font-style' vilket gav ett error. Jag vet inte vad jag hade försökt att göra, men jag tog bort den raden.
+
+    Skrev '2p' istället för 2px på rad 150. Tog bort hela raden istället eftersom jag ville inte ändra egenskapen kom jag på.
+
+    Tillsist fick jag error på raden då jag importerade en google font. Jag vet inte hur jag ska lösa det, men eftersom det funkar när jag kollar på sidan antar jag att jag kan låta det vara så.
+
+    Contrast-check:
+    
+    När jag testade kontrasten mellan den rosa/röda färgen och vitt fick jag ett väldigt lågt poäng. Just för menyknapparna gör det inte så mycket eftersom det är nästan bara ett ord som man läser. Däremot i footern kan det vara lite bättre att använda sig av färger som ökar läsbarheten. Därför gjorde jag 'secondary-color' mycket mörkare för att öka kontrasten. Då fick jag 4/6 gröna markeringar. Jag gjorde även de andra färgerna lite mörkare också för att få det att matcha lite bättre. Välkomstexten fick då 1/6 av markeringarna på grönt, så jag ändrade textfärgen till svart och fick då 6/6 på grönt. 
+
+
 
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
