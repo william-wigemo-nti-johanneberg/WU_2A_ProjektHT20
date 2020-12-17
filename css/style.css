@@ -347,19 +347,16 @@ footer {
     transform: translateY(2px) translateX(-24px);
 }
 #fb::before {
-    
     background-image: url('../img/meal1.jpg');
-
+    border-radius: 50%;
 }
 #insta::before {
-    
     background-image: url('../img/meal2.jpg');
-
+    border-radius: 50%;
 }
 #snap::before {
-    
     background-image: url('../img/meal3.jpg');
-
+    border-radius: 50%;
 }
 #about_small {
     color: white;
