@@ -157,16 +157,31 @@
     <h3>Lektioner vecka 50</h3>
     <!-- Fyll på med dokumentation här. -->
 
-    Lektion 1: Testresultat:
+    Lektion 1: Jag har testat med hjälp av olika valideringsverktyg och webbläre.
+
+    
+
+
+
+    <h2>4. Testning</h2>
+    <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
+
+    Jag har testat i Edge, Chrome och Firefox. Resultatet skiljde sig inte utöver att min scrolla upp funktion skrollar driekt upp i Edge istället för att långsamt skrolla upp. Men det tänker jag inte är så viktigt att fixa.
+
+    <img src="edge_test.jpg">
+    <img src="chrome_test.jpg">
+    <img src="firefox_test.jpg">
 
     HTML-check:
     about.html - inga error
+    //
     index.html - Varning som säger att sen section inte har en titel. Jag behåller det så jag har eftersom jag vill att titeln jag redan har ska vara utanför det rosa/röda området.
+    //
     menu.html - samma varning som i index.html Jag kommer återigen behålla det så jag har det trots varningen eftersom den sectionen som inte har en titel är en grid wrapper och jag skulle inte vilja att titeln är en del av griden.
 
     CSS-check:
     style.css - Fick varningar på mina variabler. Jag antar att det är något jag bara kan ignorera eftersom det står "Egenskap -- är inte en känd leverantörsutvidgning."
-
+    
     Hade gett värdet 'none' till 'font-style' vilket gav ett error. Jag vet inte vad jag hade försökt att göra, men jag tog bort den raden.
 
     Skrev '2p' istället för 2px på rad 150. Tog bort hela raden istället eftersom jag ville inte ändra egenskapen kom jag på.
@@ -176,11 +191,6 @@
     Contrast-check:
     
     När jag testade kontrasten mellan den rosa/röda färgen och vitt fick jag ett väldigt lågt poäng. Just för menyknapparna gör det inte så mycket eftersom det är nästan bara ett ord som man läser. Däremot i footern kan det vara lite bättre att använda sig av färger som ökar läsbarheten. Därför gjorde jag 'secondary-color' mycket mörkare för att öka kontrasten. Då fick jag 4/6 gröna markeringar. Jag gjorde även de andra färgerna lite mörkare också för att få det att matcha lite bättre. Välkomstexten fick då 1/6 av markeringarna på grönt, så jag ändrade textfärgen till svart och fick då 6/6 på grönt. 
-
-
-
-    <h2>4. Testning</h2>
-    <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
 
     <h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
