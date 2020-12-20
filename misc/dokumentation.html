@@ -184,7 +184,7 @@
 
     Hade gett värdet 'none' till 'font-style' vilket gav ett error. Jag vet inte vad jag hade försökt att göra, men jag tog bort den raden.
 
-    Skrev '2p' istället för 2px på rad 150. Tog bort hela raden istället eftersom jag ville inte ändra egenskapen kom jag på.
+    Skrev '2p' istället för 2px på rad 150. Tog bort hela raden istället eftersom jag ville inte ändra CSS-egenskapen kom jag på.
 
     Tillsist fick jag error på raden då jag importerade en google font. Jag vet inte hur jag ska lösa det, men eftersom det funkar när jag kollar på sidan antar jag att jag kan låta det vara så.
 
@@ -196,6 +196,15 @@
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
+    Det första problemet jag stötte på var hur jag skulle styla specifika element. Till exempel visste jag inte hur jag ville att nav-knapparna skulle se ut, därför i min skiss hade jag endast tänkt ut vart alla element skulle vara och inte hur de skulle se ut. Dessutom gjorde det att det blev det svårare att skapa ett liknande utseende på alla sidor. Om jag istället hade lagt mer tid på skissen, kanske till och med gjort en skiss i Adobe XD, hade jag istället kunna koda direkt utan att testa mig fram till ett utseende som jag tycker fungerar bra med resten av sidans utseende.
+
+    Det andra problemet jag stötte på var att loggan jag hade gjort var svår att läsa av när den var i mindre format i naven. Jag kunde ha gjort den större, men det skulle göra att naven också blev större vilket jag inte ville göra. Istället gjorde jag en ny logga med större text samt mycket mindre text, endast två bokstäver. Det gjorde att när den gjordes liten såg man fortfarande vad det stod.
+
+    Det tredje problemet jag stötte på var när skulle göra att naven blev mindre när man skrollade. När man hade skrollat ner en bit gjorde jag så att naven fick en ny klass som gjorde att naven blev kortare och så att navens barn blev osynliga. Däremot var det många CSS-egenskaper som jag ville ändra med klassen "small_nav" som ändrades av id:t. Jag skulle ha gjord att naven fick ett till id, men istället valde jag att använda !important vilket jag borde ha undvikt egentligen. Jag ansåg att jag kunde lika gärna använda !important eftersom jag hade inte gjort det tidigare i projektet och borde därför inte skapa jobbiga problem för mig då jag endast använder det på ett ställe på sidan.
+
+    Det som gick bra var rätterna i menyn. Jag tyckte de såg bra ut. Däremot blev bilderna, iallafall den första, ganska suddig. Det kan ha varit för att jag exporterade bilden med för låg kvalitet eller för låg upplösning. Jag hade kunnat exportera den igen fast med bättre kvalitet i utbyte mot en större filstorlek som i sin tur skulle försämra inladdningshastigheten för användaren, men det är kanske värt för en klarare bild.
+
+    Jag tyckte också det lodräta sträcket mellan "Om oss" och "Kontakta oss" blev bra. Jag använde pseduo-klassen "::after" och translate för att få den placerad i mitten. I mina testningar, genom att förstora och förminska fönstret, verkade det fungera, men det är möjligt att linjen inte längre är placerad i mitten vid vissa fönsterstorlekar. För att vara säker att den alltid är i mitten oavsett vad skulle jag kunna ha gjort en extra small kolumn i mitten i grid wrappern och fyllt hela kolumnen med ett element.
 
 </body>
 </html>
